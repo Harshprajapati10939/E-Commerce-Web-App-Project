@@ -25,5 +25,22 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-  </body>
+    <script type="text/javascript">
+      (function(1){
+        if(1.search[1]==="/"){
+          var decoded = 1.search
+          .slice(1)
+          .split("&")
+          .map(function (s){
+            return s.replace(/~and/g,"&");
+          })
+          .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            1.pathnamw.slice(0,-1)+ decoded +1.hash
+          );
+        }
+      })(window.location);
+  </body>ss
 </html>
